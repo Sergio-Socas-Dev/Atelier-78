@@ -107,111 +107,80 @@
 
 
 
-  <!-- 
-    - #HEADER
-  -->
-
   <header class="header" data-header>
-    <div class="container">
-
-      <a href="#" class="logo">
+    <div class="container logos">
+  
+      <a href="#" class="logo logos">
         <img src="./assets/images//Atelier 78.png" width="160" height="50" alt="Grilli - Home">
       </a>
-
-      <nav class="navbar" data-navbar>
-
+  
+      <!-- Checkbox para controlar el navbar -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  
+      <!-- Botón hamburguesa visible en móviles -->
+      <label for="nav-toggle" class="nav-open-btn">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </label>
+  
+      <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5 fixed-top" data-navbar>
         <button class="close-btn" aria-label="close menu" data-nav-toggler>
           <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
         </button>
-
-        <a href="#" class="logo">
-          <img src="./assets/images/Atelier 78.png" width="160" height="50" alt="Grilli - Home">
+  
+        <a href="#" class="logo logos">
+          <img src="./assets/images/Atelier 78.png" alt="Grilli - Home">
         </a>
-
+  
         <ul class="navbar-list">
-
           <li class="navbar-item">
             <a href="#home" class="navbar-link hover-underline active">
               <div class="separator"></div>
-
               <span class="span">Home</span>
             </a>
           </li>
-
           <li class="navbar-item">
             <a href="#menu" class="navbar-link hover-underline">
               <div class="separator"></div>
-
               <span class="span">Menus</span>
             </a>
           </li>
-
           <li class="navbar-item">
             <a href="#about" class="navbar-link hover-underline">
               <div class="separator"></div>
-
               <span class="span">About Us</span>
             </a>
           </li>
-
           <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
+            <a href="#contact" class="navbar-link hover-underline">
               <div class="separator"></div>
-
-              <span class="span">Our Chefs</span>
-            </a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
-              <div class="separator"></div>
-
               <span class="span">Contact</span>
             </a>
           </li>
-
         </ul>
-
+  
         <div class="text-center">
           <p class="headline-1 navbar-title">Visit Us</p>
-
           <address class="body-4">
             C. El Horno, 26, 38678 Adeje <br>
             Santa Cruz de Tenerife
           </address>
-
           <p class="body-4 navbar-text">Open: 10.00 am - 22.00pm</p>
-
           <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">booking@grilli.com</a>
-
           <div class="separator"></div>
-
           <p class="contact-label">Booking Request</p>
-
           <a href="tel:+88123123456" class="body-1 contact-number hover-underline">
             + 34 604 20 26 05
           </a>
         </div>
-
+  
       </nav>
-
-     <!-- <a href="#" class="btn btn-secondary">
-        <span class="text text-1">Find A Table</span>
-
-        <span class="text text-2" aria-hidden="true">Find A Table</span>
-      </a>
-
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <span class="line line-1"></span>
-        <span class="line line-2"></span>
-        <span class="line line-3"></span>
-      </button>
--->
+  
       <div class="overlay" data-nav-toggler data-overlay></div>
-
     </div>
   </header>
-
+  
 
 
 
@@ -329,7 +298,7 @@
       -->
 
       <section class="section service bg-black-10 text-center" aria-label="service">
-        <div class="container">
+        <div class="container jose">
 
           <p class="section-subtitle label-2">Lo Mejor de Cada Pais</p>
 
@@ -764,13 +733,7 @@
             <div class="separator"></div>
           </div>
 
-       <!--   <div class="profile">
-            <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="Sam Jhonson"
-              class="img">
 
-            <p class="label-2 profile-name">Sam Jhonson</p>
-          </div>
--->
         </div>
       </section>
 
@@ -782,32 +745,33 @@
         - #RESERVATION
       -->
 
-      <section class="reservation">
-        <div class="container containers">
+      <section class="reservation" id="contact">
+        <div class=" rocky ">
       
           <div class="form-right rock text-center" style="background-image: url('./assets/images/form-pattern.png')">
-            <h2 class="headline-1 text-center">Contáctanos</h2>
+            <h2 class="coon text-center">Contáctanos</h2><br>
       
-            <p class="contact-label">Reservas al:</p>
-            <a href="tel:+34 604 20 26 05" class="body-1 contact-number hover-underline">+34 604 20 26 05</a>
+            <p class="cont">Reservas al:</p>
+            <br>
+            <a href="tel:+34 604 20 26 05" class="body-1  contin contact-number hover-underline">+34 604 20 26 05</a>
       
             <div class="separator"></div>
       
-            <p class="contact-label">Hubicación</p>
-            <address class="body-4">
-              C. El Horno, 26, 38678 Adeje <br>
+            <p class="contact-label">Ubicación</p>
+            <address class="bodyfit">
+              C. El Horno, 26, 38678 Adeje <br class="bcs"><br>
               Santa Cruz de Tenerife
             </address>
       
             <p class="contact-label">Horario Almuerzo</p>
-            <p class="body-4">
-              Lunes - Domingo <br>
+            <p class="bodyfit">
+              Lunes - Domingo <br class="bcs"><br>
               10.00 am - 2.30pm
             </p>
       
             <p class="contact-label">Horario Cena</p>
-            <p class="body-4">
-              Lunes - Domingo <br>
+            <p class="bodyfit">
+              Lunes - Domingo <br class="bcs"><br>
               2.30 pm - 10.00pm
             </p>
           </div>
@@ -900,104 +864,6 @@
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #EVENT
-      -->
-      <!--
-      <section class="section event bg-black-10" aria-label="event">
-        <div class="container">
-
-          <p class="section-subtitle label-2 text-center">Recent Updates</p>
-
-          <h2 class="section-title headline-1 text-center">Upcoming Event</h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/event-1.jpg" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-15">15/09/2030</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Food, Flavour</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/event-2.jpg" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2024-09-08">08/09/2030</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Healthy Food</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/event-3.jpg" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-03">03/09/2030</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Recipie</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <a href="#" class="btn btn-primary">
-            <span class="text text-1">View Our Blog</span>
-
-            <span class="text text-2" aria-hidden="true">View Our Blog</span>
-          </a>
-
-        </div>
-      </section>
-
-    </article>
-  </main>
-
-
-
--->
-
       <!-- 
     - #FOOTER
   -->
@@ -1020,7 +886,7 @@
 
               <a href="mailto:booking@grilli.com" class="body-4 contact-link">booking@grilli.com</a>
 
-              <a href="tel:+ 34 604 20 26 05" class="body-4 contact-link">Booking Request : + 34 604 20 26 05 </a>
+              <a href="tel:+ 34 604 20 26 05" class="body-4 contact-link">Reservas : + 34 604 20 26 05 </a>
 
               <p class="body-4">
                 Open : 10:00 am - 22:00 pm
@@ -1032,49 +898,26 @@
                 <div class="separator"></div>
               </div>
 
-              <p class="title-1">Get News & Offers</p>
-
-              <p class="label-1">
-                Subscribe us & Get <span class="span">2% Off.</span>
-              </p>
-
-              <form action="" class="input-wrapper">
-                <div class="icon-wrapper">
-                  <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-
-                  <input type="email" name="email_address" placeholder="Your email" autocomplete="off"
-                    class="input-field">
-                </div>
-
-                <button type="submit" class="btn btn-secondary">
-                  <span class="text text-1">Subscribe</span>
-
-                  <span class="text text-2" aria-hidden="true">Subscribe</span>
-                </button>
-              </form>
 
             </div>
 
             <ul class="footer-list">
 
               <li>
-                <a href="#" class="label-2 footer-link hover-underline">Home</a>
+                <a href="#home" class="label-2 footer-link hover-underline">Home</a>
               </li>
 
               <li>
-                <a href="#" class="label-2 footer-link hover-underline">Menus</a>
+                <a href="#menu" class="label-2 footer-link hover-underline">Menus</a>
               </li>
 
               <li>
-                <a href="#" class="label-2 footer-link hover-underline">About Us</a>
+                <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
               </li>
 
-              <li>
-                <a href="#" class="label-2 footer-link hover-underline">Our Chefs</a>
-              </li>
 
               <li>
-                <a href="#" class="label-2 footer-link hover-underline">Contact</a>
+                <a href="#contact" class="label-2 footer-link hover-underline">Contact</a>
               </li>
 
             </ul>
