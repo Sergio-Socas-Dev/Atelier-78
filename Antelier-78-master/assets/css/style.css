@@ -1,18 +1,4 @@
-/*-----------------------------------*\
-  #index.css
-\*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
@@ -593,11 +579,6 @@ body.nav-active { overflow: hidden; }
   background-color: black;
  }
 
-
-
-
-
-
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -1128,7 +1109,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-
+.headline-1
 
 /*-----------------------------------*\
   #TESTIMONIALS
@@ -1176,13 +1157,29 @@ body.nav-active { overflow: hidden; }
   text-transform: uppercase;
   letter-spacing: var(--letterSpacing-3);
 }
+ 
+.rocky{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin: 1rem ;
+ width: 100%;
+}
 
+.rock{
+  width: 50rem;
+  height: 50rem;
+}
+.rocks{
+  width: 60rem;
+  height: 52rem;
+}
 
 
 
 /* Reserva altura y centra el contenedor */
 .containers {
-  height: 80vh; /* Ocupa toda la altura de la pantalla */
+  height: 90vh; /* Ocupa toda la altura de la pantalla */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1205,10 +1202,28 @@ body.nav-active { overflow: hidden; }
  
 }
 
-
-
-
-
+.coon{
+  font-size: 10rem;
+  margin: 1rem;
+}
+.cont{
+  margin-top: 1rem;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.contin{
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+}
+.bodyfit{
+  font-size: 4rem;
+  margin: 2rem;
+}
+.bcs{
+  padding: 3rem;
+}
 /*-----------------------------------*\
   #FEATURES
 \*-----------------------------------*/
@@ -1289,14 +1304,6 @@ body.nav-active { overflow: hidden; }
 }
 
 
-.rock{
-  width: 50rem;
-  height: 50rem;
-}
-.rocks{
-  width: 60rem;
-  height: 52rem;
-}
 
 /*-----------------------------------*\
   #FOOTER
@@ -1437,8 +1444,155 @@ body.nav-active { overflow: hidden; }
 /**
  * responsive for larger than 575px screen
  */
+ /* Ajustes para el navbar en móviles */
+ 
+ 
+/* Media query para móviles */
+@media (max-width: 768px) {
 
-@media (min-width: 575px) {
+  /* Escondemos el checkbox para que no sea visible */
+  .nav-toggle {
+    display: none;
+  }
+
+  /* Mostrar el botón hamburguesa solo en móviles */
+  .nav-open-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-open-btn .line {
+    width: 30px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 6px 0;
+    transition: all 0.3s ease;
+  }
+
+  /* Navbar fijo y centrado */
+  .navbar {
+    display: none;  /* Inicialmente oculto */
+    position: fixed;
+    top: 0;   /* Fijado en la parte superior */
+    left: 50%;  /* Centrado horizontalmente */
+    transform: translateX(-50%);  /* Ajuste para el centrado */
+    background-color: var(--smoky-black-1);
+    z-index: 100;
+    padding: 20px;
+    width: 90%;  /* Establecer un ancho adecuado */
+    max-width: 400px; /* Ajustar el tamaño máximo según sea necesario */
+    border-radius: 8px; /* Opcional */
+  }
+
+  /* Mostrar el navbar cuando el checkbox está marcado */
+  .nav-toggle:checked + .nav-open-btn + .navbar {
+    display: block;
+  }
+
+  /* Mostrar el overlay cuando el navbar está activo */
+  .nav-toggle:checked + .nav-open-btn + .navbar + .overlay {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  /* Hacer que los elementos del navbar se alineen verticalmente */
+  .navbar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center; /* Alinea los elementos del menú en el centro */
+  }
+
+  .navbar-item {
+    width: 100%;
+    text-align: center; /* Centra los enlaces */
+  }
+
+  /* Mostrar el logo dentro del navbar en móviles */
+  .navbar .logo {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+/* Media query para pantallas más grandes */
+@media (min-width: 769px) {
+
+  /* Eliminar el botón hamburguesa en pantallas grandes */
+  .nav-open-btn {
+    display: none;
+  }
+
+  /* Mostrar el navbar normalmente en pantallas grandes */
+  .navbar {
+    display: block;
+    position: static;
+    background-color: var(--smoky-black-1);
+    width: 100%; /* Asegurarse de que ocupe todo el ancho */
+  }
+
+  /* El overlay no será necesario en pantallas grandes */
+  .overlay {
+    display: none;
+  }
+
+  /* Asegurarse de que la lista de navegación esté alineada correctamente en pantallas grandes */
+  .navbar-list {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 20px;
+    align-items: center; /* Centrar verticalmente */
+  }
+
+  .navbar-item {
+    text-align: center; /* Centrar los enlaces */
+  }
+}
+
+/* Media query para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+  .logos img {
+    max-width: 100px; /* Tamaño más pequeño para pantallas pequeñas */
+  }
+
+  .navbar-list {
+    gap: 5px; /* Menos espacio entre enlaces */
+  }
+
+  .navbar-link {
+    font-size: 0.9rem; /* Texto más pequeño */
+  }
+}
+
+/* Asegurando que el contenido esté centrado en pantallas pequeñas */
+@media (max-width: 768px) {
+  .container, .service .container, .footer-brand {
+    width: 90%;
+    margin: 0 auto; /* Centrado horizontal */
+  }
+}
+
+
+
+ 
+
+ @media (max-width: 480px) {
+  .logos img {
+    max-width: 100px; /* Tamaño más pequeño para pantallas pequeñas */
+  }
+
+  .navbar-list {
+    gap: 5px; /* Menos espacio entre enlaces */
+  }
+
+  .navbar-link {
+    font-size: 0.9rem; /* Texto más pequeño */
+  }
+}
+
+@media (min-width: 391px) {
 
   /**
    * CUSTOM PROPERTY
@@ -1524,6 +1678,9 @@ body.nav-active { overflow: hidden; }
   .header .btn {
     display: block;
     margin-inline-start: auto;
+  }
+  .logos{
+    min-width:2px;
   }
 
 
@@ -1650,6 +1807,12 @@ body.nav-active { overflow: hidden; }
     grid-column: 1 / 3;
     width: calc(50% - 20px);
     margin-inline: auto;
+  }
+@media (max-width: 392x) {
+
+.container .logos{
+  max-width: 5px;
+}
   }
 
 
@@ -1861,7 +2024,7 @@ body.nav-active { overflow: hidden; }
    * RESERVATION
    */
 
-  .reservation-form {
+   .form-right .rock .text-center{
     display: grid;
     grid-template-columns: 1fr 0.5fr;
   }
